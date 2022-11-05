@@ -1,0 +1,103 @@
+/*Variaveis*/
+:root {
+    --primary: #EB1CCC;
+    --secondery: #95989A;
+    --text-color: #FFF;
+    --text-secondary: #000;
+    --text-tertiary: #5d5d5d;
+}
+
+/*Configurações de fonte e espaçamentos*/
+* {
+    font-family: "Montserrat";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Descrição evento*/
+#descricaoEvento {
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url("/img/hrz-5.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--text-color);
+}
+
+#aviso h2,
+#aviso .dataEvento {
+    color: var(--primary);
+}
+
+#aviso h2 {
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+#aviso .sobreEvento {
+    font-size: 2em;
+    text-transform: uppercase;
+    max-width: 350px;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+#aviso p {
+    font-size: 1.2em;
+    margin-bottom: .3em;
+}
+
+#aviso .dataEvento {
+    font-weight: bold;
+}
+
+/*Formulario de inscrição*/
+#formularioInscricao {
+    background: var(--secondery);
+    padding: 2em;
+    max-width: 22%;
+}
+
+#formularioInscricao p {
+    font-size: 1.5em;
+    color: var(--text-secondary);
+    margin-bottom: 1em;
+}
+
+.grupoFormulario {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .8em;
+}
+
+.grupoFormulario label {
+    color: var(--text-tertiary);
+    margin-bottom: .3em;
+    font-weight: bold;
+}
+
+.grupoFormulario input,
+.grupoFormulario select {
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.btn {
+    background: var(--primary);
+    color: var(--text-color);
+    text-transform: uppercase;
+    width: 100%;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.btn:hover {
+    opacity: 1;
+}
